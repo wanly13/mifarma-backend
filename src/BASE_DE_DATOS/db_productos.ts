@@ -4,7 +4,6 @@ export const BD_PRODUCTOS = [
         nombre: "Paracetamol 500mg",
         descripcion: "Analgésico y antipirético para el alivio del dolor y fiebre.",
         precio: 2.50,
-        stock: 100,
         categoria: "Medicamentos"
     },
     {
@@ -12,7 +11,6 @@ export const BD_PRODUCTOS = [
         nombre: "Ibuprofeno 400mg",
         descripcion: "Antiinflamatorio y analgésico para dolores musculares y fiebre.",
         precio: 3.80,
-        stock: 80,
         categoria: "Medicamentos"
     },
     {
@@ -20,7 +18,6 @@ export const BD_PRODUCTOS = [
         nombre: "Suero Oral Pedialyte 500ml",
         descripcion: "Solución rehidratante para prevenir la deshidratación.",
         precio: 12.90,
-        stock: 50,
         categoria: "Electrolitos"
     },
     {
@@ -28,7 +25,6 @@ export const BD_PRODUCTOS = [
         nombre: "Vitamina C 1g x 10 sobres",
         descripcion: "Suplemento de vitamina C para fortalecer el sistema inmunológico.",
         precio: 15.00,
-        stock: 60,
         categoria: "Suplementos"
     },
     {
@@ -36,7 +32,6 @@ export const BD_PRODUCTOS = [
         nombre: "Alcohol en Gel 70% 250ml",
         descripcion: "Desinfectante de manos sin enjuague, elimina el 99.9% de gérmenes.",
         precio: 9.50,
-        stock: 200,
         categoria: "Higiene"
     },
     {
@@ -44,7 +39,6 @@ export const BD_PRODUCTOS = [
         nombre: "Omeprazol 20mg x 14 cápsulas",
         descripcion: "Protector gástrico para reducir la acidez estomacal.",
         precio: 18.00,
-        stock: 40,
         categoria: "Medicamentos"
     },
     {
@@ -52,7 +46,6 @@ export const BD_PRODUCTOS = [
         nombre: "Shampoo Anticaspa Head & Shoulders 400ml",
         descripcion: "Shampoo dermatológico para eliminar la caspa y fortalecer el cabello.",
         precio: 24.90,
-        stock: 30,
         categoria: "Cuidado Personal"
     },
     {
@@ -60,7 +53,6 @@ export const BD_PRODUCTOS = [
         nombre: "Gelatina Ensure Advance Vainilla 237ml",
         descripcion: "Suplemento nutricional para adultos mayores, rico en proteínas y vitaminas.",
         precio: 14.50,
-        stock: 35,
         categoria: "Nutrición"
     },
     {
@@ -68,7 +60,6 @@ export const BD_PRODUCTOS = [
         nombre: "Toallitas Húmedas Huggies x 80 unidades",
         descripcion: "Toallitas húmedas suaves para la higiene del bebé.",
         precio: 11.20,
-        stock: 75,
         categoria: "Bebés"
     },
     {
@@ -76,7 +67,6 @@ export const BD_PRODUCTOS = [
         nombre: "Mascarilla KN95 x 5 unidades",
         descripcion: "Mascarilla de alta protección contra partículas y bacterias.",
         precio: 16.00,
-        stock: 150,
         categoria: "Salud"
     }
 ];

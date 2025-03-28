@@ -2,12 +2,16 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { ProductosService } from './productos.service';
 import { CreateProductoDto } from './dto/create-producto.dto';
 import { UpdateProductoDto } from './dto/update-producto.dto';
+import { InventarioService } from 'src/inventario/inventario.service';
 
 @Controller('productos')
 export class ProductosController {
-  
 
-  constructor(private readonly productosService: ProductosService) { }
+
+  constructor(
+    private readonly productosService: ProductosService,
+    private readonly inventarioService: InventarioService
+  ) { }
 
   @Post()
   create(@Body() createProductoDto: CreateProductoDto) {
@@ -32,5 +36,12 @@ export class ProductosController {
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.productosService.remove(+id);
+  }
+
+
+  @Get('estatusProducto/:idProducto')
+  estatusProducto(@Param('idProducto') idProducto: string) { // VALIDAMOS QUE SI EXISTA ESTOCK EN EL INVENTARIO
+    var data: any = this.inventarioService.findOneByProducto(+idProducto);
+    return data.stock > 0;
   }
 }
